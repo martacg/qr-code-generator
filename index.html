@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>QR Code Generator</title>
+</head>
+<body>
+
+    <header>
+        <img src="images/logo-qr-generator.svg" class="brand"/>
+    </header>
+
+    <main>
+        <div class="form">
+            <input type="text" placeholder="Enter an url" class="form__text" id="qrText"/>
+            <input type="button" value="QR code" class="form__button" id="btnGenerator"/>
+        </div>
+        <div class="result">
+            <div class="qr__background">
+                <div id="qrCode" class="qr__code"></div>
+            </div>
+            <div class="qr__action">
+                <a href="#" class="form__button" id="btnDownload" download="qrcode.jpg">Download <span class="icon"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="Layer 2" id="Layer_2"><path d="M23.05,22a1,1,0,0,0-1.41,0L17,26.56V3a1,1,0,1,0-2,0V26.53L10.47,22a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l6.37,6.37a.9.9,0,0,0,1.27,0l6.36-6.37A1,1,0,0,0,23.05,22Z" /></g></svg></span></a>
+                <a href="#" class="form__button" id="btnShare">Share <span class="icon"><svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><rect fill="none" height="256" width="256"/><path d="M156.3,88.4,88.4,156.3a8,8,0,0,0,0,11.3,8.1,8.1,0,0,0,11.3,0l67.9-67.9a8,8,0,0,0-11.3-11.3Z"/><path d="M139.3,173.3,111,201.5a39.7,39.7,0,0,1-56.5,0,40,40,0,0,1,0-56.5l28.2-28.3a8,8,0,0,0-11.3-11.3L43.1,133.7a56,56,0,0,0,79.2,79.2l28.3-28.3a8,8,0,0,0,0-11.3A7.9,7.9,0,0,0,139.3,173.3Z"/><path d="M212.9,43.1a56,56,0,0,0-79.2,0L105.4,71.4a8,8,0,0,0,11.3,11.3L145,54.5a39.7,39.7,0,0,1,56.5,0,40,40,0,0,1,0,56.5l-28.2,28.3a7.9,7.9,0,0,0,0,11.3,7.7,7.7,0,0,0,5.6,2.4,8,8,0,0,0,5.7-2.4l28.3-28.3A56.1,56.1,0,0,0,212.9,43.1Z" /></svg></span></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- <footer>
+        <a class="link-card" href="https://martagonzalez.dev/" target="_blank">
+            <div class="link-title">Marta González, Desarrollo Front-End</div>
+            <div class="link-description">www.martagonzalez.dev</div>
+        </a>
+    </footer>-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
