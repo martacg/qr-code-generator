@@ -122,10 +122,20 @@ footer{
 .form__text,
 .form__text:focus{
     all: unset;
-    width: 300px;
+    width: 100px;
     height:62px;
     cursor:text;
     color: #F2F5F9;
+}
+
+/* Desktop */
+@media screen and (min-width: 640px){
+
+    .form__text,
+    .form__text:focus{
+        width: 300px;
+    }
+
 }
 
 .form__text::placeholder{
